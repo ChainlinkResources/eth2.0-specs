@@ -297,6 +297,7 @@ class ShardBlock(Container):
     shard_parent_root: Root
     beacon_parent_root: Root
     slot: Slot
+    proposer_index: ValidatorIndex
     body: ByteList[MAX_SHARD_BLOCK_SIZE]
 ```
 
@@ -315,6 +316,7 @@ class ShardBlockHeader(Container):
     shard_parent_root: Root
     beacon_parent_root: Root
     slot: Slot
+    proposer_index: ValidatorIndex
     body_root: Root
 ```
 
